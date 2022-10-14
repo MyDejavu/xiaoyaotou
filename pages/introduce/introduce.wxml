@@ -1,0 +1,13 @@
+<!--pages/introduce/introduce.wxml-->
+<view class="rule">
+  <image src="/images/rule1.png"></image>
+</view>
+<view class="rule">
+  <image src="/images/rule2.png"></image>
+</view>
+<view class="rule">
+  <image src="/images/rule3.png"></image>
+</view>
+<view class="rule">
+  <image src="/images/rule4.png"></image>
+</view>

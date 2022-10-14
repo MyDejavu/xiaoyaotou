@@ -1,0 +1,7 @@
+/* pages/introduce/introduce.wxss */
+.rule{
+  border: 1px solid black;
+}
+image{
+  width: 100%;/*图片填满屏幕*/
+}
