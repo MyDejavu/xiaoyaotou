@@ -1,0 +1,147 @@
+/* pages/game/game.wxss */
+.Atext{
+  margin-top: 5%;
+  margin-left:1%;
+  margin-right: -4%;
+  display: block;
+}
+.Btext{
+  margin-top: 5%;
+  margin-left:1%;
+  margin-right: -4%;
+  display: block;
+}
+.bg image{
+  width:100%;
+  height:100%;
+  background-size: 100% 100%;
+  z-index: -999;
+  position:absolute;  
+}
+.content{
+  position: absolute;
+  z-index: 1;
+}
+image{
+  width:100px;
+  height:100px;
+}
+.try{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.buttons button {
+  display: inline-block;/* 行内块 */
+  width: 42vw !important;/* 权重  优先级*/
+  margin: 0 30rpx !important;
+}
+.btn{
+  margin-left: 30%;
+  margin-top: 30%;
+  font-size: 20px;
+  border-radius: 10px;
+  text-align: center;
+  border: 2px solid rgb(126, 117, 117);
+}
+/*.title {
+  height: 80rpx;
+  width: 400rpx;
+  margin: 20rpx auto;
+  font-size: 40rpx;
+  line-height: 80rpx;
+  text-align: center;
+  border-radius: 10rpx;
+  background: rgba(219, 18, 102, 0.1);
+  color: #fff;
+}*/
+/*新的九宫格*/
+.playerA{
+  display: flex;
+}
+.AgridList{
+  display: flex;
+  margin-left: 7%;
+  justify-content : flex-start;
+  flex-wrap: wrap;
+  width : 180px ;
+  height : 180px ;
+  border: 4px solid black;
+}
+.AgridList .innerA{
+  width : 58px ;
+  height : 58px ;
+  border : 1px solid #ccc ;
+  }
+.AgridList .innerA .imA{
+     width : 58px;
+     justify-content : center;
+     align-items: center;
+  }
+.playerB{
+    display: flex;
+  }
+.BgridList{
+    margin-top: 2%;
+    margin-left: 5%;
+    display: flex;
+    justify-content : flex-start;
+    flex-wrap: wrap;
+    width : 180px ;
+    height : 180px ;
+    border: 4px solid black;
+  }
+.BgridList .innerB{
+    width : 58px ;
+    height : 58px ;
+    border : 1px solid #ccc ;
+    }
+.BgridList .innerB .imB{
+    width : 58px;
+    justify-content : center;
+    align-items: center;
+ }
+ .line{
+  width: 92%;
+  display: flex;
+  justify-content: center;/*水平居中*/
+}
+text{
+  font-size: smaller;
+}
+.gameOverMsg{
+  position: absolute;
+  bottom: 20px;
+  left: 82px;
+}
+.btnRestart{
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.over{
+  position: relative;
+  z-index: 1000;
+  background-color: pink;
+  border:solid plum;
+  margin-bottom: 180px;
+}
+.gameover{
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+}
+.Ascore{
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+}
+.Bscore{
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+}
+.winner{
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+}

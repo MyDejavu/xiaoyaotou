@@ -1,0 +1,55 @@
+<!--pages/game/game.wxml-->
+<view class="game">
+  <view class="bg">
+    <image src="/images/background.png"></image>
+  </view>
+  <view class="content">
+    <view class="try">
+      <image src="{{touziImage}}"></image><!--设置骰子的图片路径-->
+    </view>
+    <!--摇骰子按钮-->
+    <view class="buttons">
+      <!--<view class="title">{{title}}</view>-->
+      <button bindtap="play">开始</button>
+      <button bindtap="btnOver">结束</button>
+    </view>
+    <!--甲方九宫格-->
+    <view class="playerA">
+      <view class = 'Atext'>
+        <text style="font-size: 20px;">玩家A：</text>
+        <view bindtap="tuoguan" class='btn'>托管</view>
+      </view>
+      <view class="AgridList">
+          <view class='innerA' wx:for="{{p1touziImage}}" wx:for-item="NowImage" wx:for-index="index" bindtap="set" data-num="{{mp[index]}}" data-index="{{index}}">
+          <image src='{{NowImage}}' mode="widthFix" class="imA"></image>
+          </view>
+      </view>
+    </view>
+    <view class="line">
+      <text>逍遥骰-逍遥骰-逍遥骰</text>
+    </view>
+    <!--乙方九宫格-->
+    <view class="playerB">
+      <view class = 'Btext'>
+        <text style="font-size: 20px;">玩家AI：</text>
+      </view> 
+      <view class="BgridList">
+        <view class='innerB' wx:for="{{p2touziImage}}" wx:for-item="NowImage"
+        wx:for-index="index" data-num="{{ep[index]}}" data-index="{{index}}">
+        <image src='{{NowImage}}' mode="widthFix" class="imB"></image>
+        </view>
+      </view>
+   </view>
+  </view>
+  <view wx:if="{{Gameover}}" class="gameOverMsg">
+    <view class="over">
+      <text class="gameover">游戏结束\n</text>
+      <text class="winner">{{winner}}\n</text>
+      <text class="Ascore">玩家A的得分：{{Mscore}}\n</text>
+      <text class="Bscore">玩家B的得分：{{Escore}}\n</text>
+    </view>
+    <view class="btnRestart">
+      <button bindtap="restart">重新开始</button>
+    </view>
+  </view>
+</view>
