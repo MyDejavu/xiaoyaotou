@@ -1,0 +1,20 @@
+{
+  "pages":[
+    "pages/homes/homes",
+    "pages/introduce/introduce",
+    "pages/choose/choose",
+    "pages/battle/battle",
+    "pages/manMachineBattle/manMachineBattle",
+    "pages/onlineBattle/onlineBattle",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTitleText": "逍遥骰",
+    "navigationBarTextStyle":"white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
