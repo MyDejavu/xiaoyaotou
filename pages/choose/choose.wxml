@@ -1,0 +1,15 @@
+<!--pages/choose/choose.wxml-->
+
+<image class="bg" src="/images/background.png"></image>
+<view class="local">
+    <button type="default" plain="true" bindtap="localBattle">本地对战</button>
+  </view>
+  <view class="man-machine">
+    <button type="default" plain="true" bindtap="manMachineBattle">人机对战</button>
+  </view>
+  <view class="online">
+    <button type="default" plain="true" bindtap="onlineBattle">在线对战</button>
+  </view>
+  <view class="back">
+    <button type="default" plain="true" bindtap="back">返回</button>
+  </view>
