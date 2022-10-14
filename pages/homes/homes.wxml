@@ -1,0 +1,12 @@
+<!--pages/homes/homes.wxml-->
+<view class="home">
+  <image class="bg" src="/images/background.png"></image>
+  <text class="head-text-one">逍遥</text>
+  <text class="head-text-two">骰骰乐</text>
+  <view class="skip">
+    <button type="default" plain="true" bindtap="go">开始游戏</button>
+  </view>
+  <view class="introduce">
+    <button type="default" plain="true" bindtap="introduce">游戏介绍</button>
+  </view>
+</view>

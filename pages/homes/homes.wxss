@@ -1,0 +1,49 @@
+/* pages/homes/homes.wxss */
+.bg{
+  width:100%;
+  height:100%;
+  position:fixed;
+  background-size: 100% 100%;
+  filter: blur(1rpx);
+}
+/*逍遥字体样式*/
+.head-text-one{
+  width: 100px;
+  height: 24px;  
+  position: absolute;
+  left: 0;
+  top: 0px;
+  right: 0;
+  bottom: 400px;
+  margin: auto;
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+}
+.head-text-two{
+  widows: 100px;
+  height: 24px;  
+  position: absolute;
+  left: 0;
+  top: 50px;
+  right: 0;
+  bottom: 300px;
+  margin: auto;
+  font-size:50px;
+  text-align: center;
+}
+.skip{
+  display:flex;
+  position:fixed; 
+  width:100%;
+  z-index:666;
+  bottom:400rpx;
+}
+.introduce
+{
+  display:flex;
+  position:fixed; 
+  width:100%;
+  z-index:666;
+  bottom:300rpx;
+}
